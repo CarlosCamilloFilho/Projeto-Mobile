@@ -10,8 +10,8 @@ export default function HomeScreen({ route, navigation }) {
 
   }
   const perfil = () => {
-    navigation.navigate('Perfil', {
-  });
+          navigation.navigate('Perfil', {
+        });
 
 }
 useEffect(() => {
@@ -20,9 +20,9 @@ useEffect(() => {
   
   return (
     <View style={styles.container}>
-      <Text>Seja bem Vindo a Home </Text>
-      {username && <Text>Usuário Logado: {username}</Text>}
-      <Image source={require('../assets/imghome.png')}/>
+      <Text style={styles.welcomeText}>Seja bem Vindo a Home </Text>
+      {username && <Text style={styles.welcomeText1}> {username}</Text>}
+      <Image style={styles.welcomeText1} source={require('../assets/imghome.png')}/>
       <TouchableOpacity style={styles.button} onPress={produto}>  
                     <Text style={styles.textButton}>Produtos</Text>
                 </TouchableOpacity>
@@ -39,26 +39,34 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    
+    padding: 20,
+  },
+  welcomeText: {
+    fontSize: 18,
+    marginBottom: 5,
+  },
+  welcomeText1: {
+    fontSize: 18,
+    marginBottom: 20,
   },
   username: {
-    frontSize: 20,
+    fontSize: 16,
     marginBottom: 20
   },
   logo: {
-    width: 110,
-    height: 100,
+    width: 150,
+    height: 120,
     marginBottom: 20 // Espaço entre a imagem e os campos de input
   },
   button: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'red',
+    backgroundColor: '#ff7c00',
     borderRadius: 10,
     padding: 10,
     height: 45,
-    width: '50%',
-    marginBottom: 20
+    width: '65%',
+    marginBottom: 15
   },
   textButton: {
     fontSize: 18,

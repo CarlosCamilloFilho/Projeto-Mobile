@@ -10,6 +10,7 @@ export default function LoginScreen({ navigation }) {
         if(username === 'Carlos' && password === 'senai123'){
             navigation.navigate('Home', {
                 username: username,
+
                 password: password,
             });
         } else {
@@ -43,25 +44,25 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      padding: 16,
+      padding: 70,
       backgroundColor: '#f0f0f0',
     },
     backgroundContainer: {
       width: '100%',
-      padding: 20,
+      padding: 15,
       backgroundColor: '#ffffff',
       borderRadius: 10,
       shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
+      shadowOffset: { width: 0, height: 2 },  
       shadowOpacity: 0.8,
       shadowRadius: 2,
       elevation: 5,
       alignItems: 'center', // Centraliza o conteúdo
     },
     logo: {
-      width: 110,
-      height: 100,
-      marginBottom: 50, // Espaço entre a imagem e os campos de input
+      width: 190,
+      height: 120,
+      marginBottom: 10, // Espaço entre a imagem e os campos de input
     },
     inputContainer: {
       width: '100%',
@@ -70,7 +71,7 @@ const styles = StyleSheet.create({
     button: {
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'red',
+      backgroundColor: '#ff7c00',
       borderRadius: 10,
       padding: 10,
       height: 45,

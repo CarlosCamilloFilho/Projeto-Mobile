@@ -6,7 +6,7 @@ export default function Perfil() {
      
     return (
       <View style={styles.container}>
-        <Text>Seja bem Vindo à tela de Perfil</Text>
+        <Text>Esta é a sua tela de Perfil</Text>
        
       </View>
     );

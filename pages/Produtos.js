@@ -6,7 +6,9 @@ export default function Produtos() {
      
     return (
       <View style={styles.container}>
-        <Text>Seja bem Vindo à tela de Produtos</Text>
+        <Text>Esta é a sua tela de Produtos</Text>
+        
+        <Text>Faça sua escolha</Text>
        
       </View>
     );
