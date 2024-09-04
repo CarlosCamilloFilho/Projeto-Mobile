@@ -20,7 +20,7 @@ useEffect(() => {
   
   return (
     <View style={styles.container}>
-      <Text>Seja bem Vindo a Home! </Text>
+      <Text>Seja bem Vindo a Home </Text>
       {username && <Text>Usuário Logado: {username}</Text>}
       <Image source={require('../assets/imghome.png')}/>
       <TouchableOpacity style={styles.button} onPress={produto}>  
